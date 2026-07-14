@@ -1,6 +1,6 @@
 ---
 name: ts
-description: "Use this when you need to write a Korean troubleshooting note for a problem, bug, or error. Create a markdown file in the appropriate folder with a short title, code snippet, error code, a simple solution summary, a '해결 완료' section, and a brief final summary. After that, commit the changes and push them if the user answers 'y'."
+description: "Use this when you need to write a Korean troubleshooting note for a problem, bug, or error. Create a new markdown file in the appropriate folder with a short title, code snippet, error code, a simple solution summary, a '해결 완료' section, and a brief final summary. Do not overwrite an existing note; add a new file when needed. After that, commit the changes and push them if the user answers 'y'."
 ---
 
 # 문제 해결 노트 작성 도우미
@@ -9,16 +9,16 @@ description: "Use this when you need to write a Korean troubleshooting note for 
 
 ## Instructions
 1. 제목과 파일명은 한국어로 짧고 명확하게 작성합니다.
-2. 코드와 오류 코드를 서로 다른 섹션으로 나눕니다.
-3. 해결 방법은 3개 이하로 간단히 정리합니다.
-4. 문서 끝에 "해결 완료" 섹션을 넣습니다.
-5. 마지막에 짧은 정리를 추가합니다.
-6. 주제에 맞는 폴더에 markdown 파일을 생성합니다.
-   - git/
-   - java/
-   - web/
-7. 작업이 끝나면 변경사항을 커밋합니다.
-8. 푸시 여부를 사용자에게 묻고, 사용자가 "y"라고 답하면 푸시합니다.
+2. 문제 상황은 무엇이 발생했는지, 왜 헷갈렸는지, 어떤 맥락에서 생겼는지까지 조금 더 자세하게 설명합니다.
+3. 코드와 오류 코드를 서로 다른 섹션으로 나눕니다.
+4. 해결 방법은 3개 이하로 간단히 정리합니다.
+5. 문서 끝에 "해결 완료" 섹션을 넣습니다.
+6. 마지막에 짧은 정리를 추가합니다.
+7. 주제에 맞는 폴더에 markdown 파일을 생성합니다.
+8. 기존 노트가 있더라도 덮어쓰지 말고, 새 파일로 추가합니다.
+9. 작업이 끝나면 변경사항을 커밋합니다.
+10. 푸시 여부를 사용자에게 묻고, 사용자가 "y"라고 답하면 푸시합니다.
+11. 주제에 맞는 폴더가 없다면 새롭게 폴더를 추가합니다.
 
 ## Template
 ```md
