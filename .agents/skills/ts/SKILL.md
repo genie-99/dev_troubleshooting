@@ -1,6 +1,6 @@
 ---
 name: ts
-description: "Use this when you need to write a Korean troubleshooting note for a problem, bug, or error. Create a markdown file in the appropriate folder with a short title, code snippet, error code, three-line solution summary, a '해결 완료' section, and a brief final summary."
+description: "Use this when you need to write a Korean troubleshooting note for a problem, bug, or error. Create a markdown file in the appropriate folder with a short title, code snippet, error code, a simple solution summary, a '해결 완료' section, and a brief final summary. After that, commit the changes and push them if the user answers 'y'."
 ---
 
 # 문제 해결 노트 작성 도우미
@@ -17,6 +17,8 @@ description: "Use this when you need to write a Korean troubleshooting note for 
    - git/
    - java/
    - web/
+7. 작업이 끝나면 변경사항을 커밋합니다.
+8. 푸시 여부를 사용자에게 묻고, 사용자가 "y"라고 답하면 푸시합니다.
 
 ## Template
 ```md
@@ -42,3 +44,5 @@ description: "Use this when you need to write a Korean troubleshooting note for 
 ## Notes
 - 파일명은 한국어로 쓰고, 주제와 내용을 바로 알 수 있게 합니다.
 - 내용은 실용적이고 나중에 검색하기 쉽게 작성합니다.
+- 커밋 메시지는 간단하고 의미 있게 작성합니다.
+- 푸시는 사용자 확인 후에만 실행합니다.
