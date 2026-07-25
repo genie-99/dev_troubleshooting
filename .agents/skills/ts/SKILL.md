@@ -1,6 +1,6 @@
 ---
 name: ts
-description: "Use this when you need to write a Korean troubleshooting note for a problem, bug, or error. Create a new markdown file in the appropriate folder with a short title, code snippet, error code, a simple solution summary, a '해결 완료' section, and a brief final summary. Do not overwrite an existing note; add a new file when needed. After that, commit the changes and push them if the user answers 'y'."
+description: "Create and publish a Korean troubleshooting note for a problem, bug, or error. Use when the user invokes `$ts` or asks to record a troubleshooting result: add a new Markdown file in the appropriate topic folder with a short title, code, error, solution, `해결 완료`, and summary; then commit only the note-related changes and push them to the configured upstream."
 ---
 
 # 문제 해결 노트 작성 도우미
@@ -19,9 +19,16 @@ description: "Use this when you need to write a Korean troubleshooting note for 
 7. 마지막에 짧은 정리를 추가합니다.
 8. 주제에 맞는 폴더에 markdown 파일을 생성합니다.
 9. 기존 노트가 있더라도 덮어쓰지 말고, 새 파일로 추가합니다.
-10. 모든 파일 생성이 완료되면 변경사항을 커밋합니다.
-11. 푸시 여부를 사용자에게 묻고, 사용자가 "y"라고 답하면 푸시합니다.
+10. 모든 파일 생성이 완료되면 노트와 노트 작성에 필요한 설정 변경만 커밋합니다.
+11. 명시적인 `$ts` 호출은 해당 커밋을 기본 upstream에 푸시할 권한으로 처리합니다. 사용자가 초안, 푸시하지 않음, 또는 검토만을 요청하면 커밋과 푸시를 건너뜁니다.
 12. 주제에 맞는 폴더가 없다면 새롭게 폴더를 추가합니다.
+
+## Publish Workflow
+
+1. 저장소 루트, 현재 브랜치, 원격, 기존 변경사항을 확인합니다.
+2. 새 노트와 노트 작성에 필요한 스킬 또는 분류 설정만 스테이징합니다. 사용자의 관련 없는 변경사항은 절대 포함하지 않습니다.
+3. 스테이징된 diff를 확인한 뒤 의미 있는 커밋 메시지로 커밋합니다.
+4. 기본 upstream에 푸시하고, 커밋 해시와 원격 브랜치를 보고합니다.
 
 ## Template
 ```md
@@ -51,4 +58,4 @@ description: "Use this when you need to write a Korean troubleshooting note for 
   - 하나의 상황에서 3가지 오류 발생 → 3개의 독립적인 파일 생성
   - 예: Vim 탈출 문제 / 코드 충돌 문제 / 변수 중복 선언 → 각각 별도 파일
 - 커밋 메시지는 간단하고 의미 있게 작성합니다.
-- 푸시는 사용자 확인 후에만 실행합니다.
+- 명시적인 `$ts` 호출에서는 기록·커밋·푸시까지 완료합니다. 초안 또는 푸시 제외 요청이 있을 때만 중단합니다.

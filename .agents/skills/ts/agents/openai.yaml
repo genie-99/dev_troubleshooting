@@ -1,0 +1,4 @@
+interface:
+  display_name: "Troubleshooting"
+  short_description: "오류 해결을 MD로 기록하고 GitHub에 반영하기"
+  default_prompt: "Use $ts to record this troubleshooting result, commit the note, and push it to the repository."

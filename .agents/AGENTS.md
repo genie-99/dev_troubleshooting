@@ -13,6 +13,7 @@
 ## 폴더 기준
 - git/: Git 관련 문제
 - java/: Java, JVM, 빌드 관련 문제
+- spring/: Spring Boot, Spring MVC, Thymeleaf 관련 문제
 - web/: 웹, 브라우저, HTTP, 서버 관련 문제
 
 ## 문서 템플릿
